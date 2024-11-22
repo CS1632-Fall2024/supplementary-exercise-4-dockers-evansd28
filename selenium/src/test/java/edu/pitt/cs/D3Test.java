@@ -39,9 +39,9 @@ public class D3Test {
   public void setUp() {
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
-    options.add_argument('--disable-dev-shm-usage');
-    options.add_argument('--ignore-ssl-errors=yes');
-    options.add_argument('--ignore-certificate-errors');
+    options.add_argument("--disable-dev-shm-usage");
+    options.add_argument("--ignore-ssl-errors=yes");
+    options.add_argument("--ignore-certificate-errors");
     driver = new ChromeDriver(options);
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
